@@ -9,7 +9,7 @@ Usernames can be 5-32 characters long and contain any of the following:
 * Digits \(0-9\) 
 * Special characters \(@.\_-\)
 
-![Step 1: Create Account](../.gitbook/assets/image%20%283%29.png)
+![Step 1: Create Account](../.gitbook/assets/image%20%285%29.png)
 
 From here, if you'd like to be able to recover your private key, enter your phone number.
 
@@ -19,7 +19,7 @@ Otherwise you can backup your private key manually. Navigate to local storage to
 
 You can find it your private key by opening up the developer console, navigating to the `Application` tab, clicking on `Local Storage`, and looking for the key-pair `nearlib:keystore:{AccountName}:default`
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 
 
