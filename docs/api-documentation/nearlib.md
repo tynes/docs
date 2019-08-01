@@ -173,9 +173,13 @@ Adds a new access key to the owners account for an some app to use.
 
 * `fundingOwner` [**string**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) account id to own the funding of this access key. If empty then account owner is used by default.
 
-  ```text
-   fundingOwner should be used if this access key would be sponsored by the app. In this case the app would
-   prefer to own funding of this access key, to get it back when the key is removed.
+  ```javascript
+  const scheduleResult = await near.scheduleFunctionCall(
+      0,
+      aliceAccountName,
+      contractName,
+      'setValue', // this is the function defined in a wasm file that we are calling
+      setArgs);
   ```
 
 * `fundingAmount` [**number**](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) amount of funding to withdraw from the owner's account and put to this access key.
