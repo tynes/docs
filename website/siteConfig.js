@@ -12,7 +12,7 @@ const siteConfig = {
     {doc:"quick-start/blockchain-prerequisite", label:"QUICK START"},
     {search: true},
     {href:'https://studio.nearprotocol.com', label:"NEAR STUDIO"},
-    {href:'https://discordapp.com/invite/jsAu4pP', label:"CHAT ON DISCORD"},
+    {href:'https://stackoverflow.com/search?q=nearprotocol', label:"ASK A QUESTION"},
   ],
 
   algolia: {
