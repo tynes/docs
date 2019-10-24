@@ -37,6 +37,13 @@ git clone https://github.com/nearprotocol/nearcore.git
 cd nearcore
 ```
 
+`checkout` to latest development version of start script:
+```bash
+git checkout staging
+```
+
+To enable coredump for docker, do `echo '/tmp/core.%t.%e.%p' | sudo tee /proc/sys/kernel/core_pattern` to modify system coredump location to `/tmp`.
+
 and then run `./scripts/start_testnet.py`
 
 On MacOS
@@ -58,6 +65,7 @@ Enter your account ID (leave empty if not going to be a validator):
 ```
 
 A node will then start in the background inside the docker. To check the logs inside the docker, run `docker logs --follow nearcore`.
+
 
 ![text-alt](assets/docker-logs.png)
 
